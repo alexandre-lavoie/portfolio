@@ -66,11 +66,40 @@
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             }
 
+            .ai_container{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-gap: 1em;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            iframe{
+                border-radius:3px;
+                border-color:#66FCF1; 
+                border-width:4px;
+                border-style: solid;
+            }
+
             #home{
                 display: grid;
             }
 
             #game{
+                display:grid;
+                grid-template-columns: 1fr 10fr 1fr;
+                grid-template-rows: 2fr 2fr 1fr;
+            }
+
+            #ai{
+                display:grid;
+                grid-template-columns: 1fr 10fr 1fr;
+                grid-template-rows: 2fr 2fr 1fr;
+            }
+
+            #contact{
                 display:grid;
                 grid-template-columns: 1fr 10fr 1fr;
                 grid-template-rows: 2fr 2fr 1fr;
@@ -113,6 +142,8 @@
             <a href="#home"><h1>HOME</h1></a>
             <a href="#game"><h1>GAMES</h1></a>
             <a href="#ai"><h1>AI</h1></a>
+            <a href="#contact"><h1>CONTACT ME</h1></a>
+            <a href="#cv"><h1>EMPLOYMENT</h1></a>
         </div>
 
         <section id="home">
@@ -146,7 +177,25 @@
         </section>
 
         <section id="ai">
-            <iframe src="https://editor.p5js.org/alexandre-lavoie/embed/jZsZ1dubf"></iframe>
+            <div class="ai_container">
+                <iframe frameBorder="0" width="400px" height="400px" src="https://editor.p5js.org/alexandre-lavoie/embed/jZsZ1dubf"></iframe>
+                <iframe frameBorder="0" width="400px" height="400px" src="https://editor.p5js.org/alexandre-lavoie/embed/4yzRDmuUm"></iframe>
+                <iframe frameBorder="0" width="400px" height="400px" src="https://editor.p5js.org/alexandre-lavoie/embed/XF63nJFZ0"></iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="game_container">
+                <a href="https://twitter.com/alexaigame">TWITTER</a>
+                <a href="https://www.linkedin.com/in/alexandre-lavoie-00/">LINKEDIN</a>
+                <a href="https://www.youtube.com/channel/UCrLs1ZRMuUyURpd43iZsMWA">YOUTUBE</a>
+                <a href="https://github.com/alexandre-lavoie">GITHUB</a>
+                <a href="https://alexandre-lavoie.itch.io/">ITCH.IO</a>
+            </div>
+        </section>
+
+        <section id="cv">
+
         </section>
 
     </body>
