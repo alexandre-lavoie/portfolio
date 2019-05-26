@@ -1,8 +1,126 @@
 <html>
     <head>
+        <style>
+            html {
+                scroll-behavior: smooth;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: white;
+                overflow: hidden;
+            }
 
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            section{
+                height: 100%;
+                width: 100%;
+                background-color: #0B0C10;
+            }
+
+            h1, h2, h3{
+                font-weight: normal;
+                margin:0;
+                padding:0;
+            }
+
+            .overlay{
+                z-index: 999;
+                display: grid;
+                grid-gap: 1em;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                position: fixed;
+                text-align: center;
+                left: 0;
+                bottom: 0;
+                padding: 1em;
+                height: auto;
+                width: 97%;
+            }
+
+            .overlay a{
+                text-decoration: none; 
+                color: inherit;
+                transition: 0.3s;
+                height: auto;
+                padding: 2em 0;
+                border-radius: 4px;
+                border-color: #66FCF1;
+                border-style: solid;
+                border-width: 3px;
+            }
+            
+            .overlay a:hover{
+                border-color: #45A29E;
+            }
+
+            .home_page{
+                display: grid;
+                height: 100%;
+                grid-template-columns: 0fr 1fr 0fr;
+                grid-template-rows: 1fr 10fr 1fr;
+            }
+
+            .home_name{
+                cursor: default;
+                display: block;
+                margin: auto;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                align-items: center;
+                text-align: center;
+            }
+
+            .home_name h1{
+                transition: 0.3s;
+                font-size: 75px;
+                color: #66FCF1;
+            }
+
+            .home_name h2{
+                transition: 0.3s;
+                font-size: 30px;
+            }
+
+            @media (max-width: 800px){
+                .home_name h1{
+                    font-size: 40px;
+                    color: #66FCF1;
+                }
+
+                .home_name h2{
+                    font-size: 16px;
+                }
+            }
+
+        </style>
+        <script>
+
+        </script>
     </head>
     <body>
-        HELLO WORLD
+        <div class="overlay">
+            <a href="#game"><h1>GAMES</h1></a>
+            <a href="#ai"><h1>AI</h1></a>
+            <a href="#home"><h1>HOME</h1></a>
+        </div>
+
+        <section id="home">
+            <div class="home_page">
+                <div class="home_name">
+                    <h1>ALEXANDRE LAVOIE</h1>
+                    <h2>MACHINE LEARNING AND COMPUTER SCIENCE</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="game">
+            
+        </section>
+
+        <section id="ai">
+            
+        </section>
     </body>
 </html>
