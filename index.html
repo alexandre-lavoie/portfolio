@@ -27,24 +27,25 @@
 
             .overlay{
                 z-index: 999;
+                padding: 1em;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                align-items: center;
                 display: grid;
                 grid-gap: 1em;
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 position: fixed;
                 text-align: center;
                 left: 0;
-                bottom: 0;
-                padding: 1em;
+                top: 0;
                 height: auto;
-                width: 97%;
+                width: 96%;
             }
 
             .overlay a{
+                position: relative;
                 text-decoration: none; 
                 color: inherit;
                 transition: 0.3s;
-                height: auto;
-                padding: 2em 0;
+                padding: 1em 0;
                 border-radius: 4px;
                 border-color: #66FCF1;
                 border-style: solid;
@@ -52,22 +53,33 @@
             }
             
             .overlay a:hover{
+                left: 0em;
                 border-color: #45A29E;
             }
 
-            .home_page{
+            .game_container{
                 display: grid;
-                height: 100%;
-                grid-template-columns: 0fr 1fr 0fr;
-                grid-template-rows: 1fr 10fr 1fr;
+                justify-items: center;
+                grid-gap: 1em;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            #home{
+                display: grid;
+            }
+
+            #game{
+                display:grid;
+                grid-template-columns: 1fr 10fr 1fr;
+                grid-template-rows: 2fr 2fr 1fr;
             }
 
             .home_name{
                 cursor: default;
                 display: block;
                 margin: auto;
-                grid-column: 2/3;
-                grid-row: 2/3;
                 align-items: center;
                 text-align: center;
             }
@@ -83,14 +95,11 @@
                 font-size: 30px;
             }
 
-            @media (max-width: 800px){
-                .home_name h1{
-                    font-size: 40px;
-                    color: #66FCF1;
-                }
-
-                .home_name h2{
-                    font-size: 16px;
+            @media (max-width: 1000px){
+                #game{
+                    display:grid;
+                    grid-template-columns: 1fr 10fr 1fr;
+                    grid-template-rows: 4fr 10fr 1fr;
                 }
             }
 
@@ -101,26 +110,44 @@
     </head>
     <body>
         <div class="overlay">
+            <a href="#home"><h1>HOME</h1></a>
             <a href="#game"><h1>GAMES</h1></a>
             <a href="#ai"><h1>AI</h1></a>
-            <a href="#home"><h1>HOME</h1></a>
         </div>
 
         <section id="home">
-            <div class="home_page">
-                <div class="home_name">
-                    <h1>ALEXANDRE LAVOIE</h1>
-                    <h2>MACHINE LEARNING AND COMPUTER SCIENCE</h2>
-                </div>
+            <div class="home_name">
+                <h1>ALEXANDRE LAVOIE</h1>
+                <h2>MACHINE LEARNING AND COMPUTER SCIENCE</h2>
             </div>
         </section>
 
         <section id="game">
-            
+            <div class="game_container">
+                <div class="game_box">
+                    <iframe frameborder="0" src="https://itch.io/embed/409547?border_width=0&amp;bg_color=0B0C10&amp;link_color=66FCF1" width="206" height="165"></iframe>
+                </div>
+                <div class="game_box">
+                    <iframe frameborder="0" src="https://itch.io/embed/401211?border_width=0&amp;bg_color=0B0C10&amp;link_color=66FCF1" width="206" height="165"></iframe>
+                </div>
+                <div class="game_box">
+                    <iframe frameborder="0" src="https://itch.io/embed/102104?border_width=0&amp;bg_color=0B0C10&amp;link_color=66FCF1" width="206" height="165"></iframe>
+                </div>
+                <div class="game_box">
+                    <iframe frameborder="0" src="https://itch.io/embed/395793?border_width=0&amp;bg_color=0B0C10&amp;link_color=66FCF1" width="206" height="165"></iframe>
+                </div>
+                <div class="game_box">
+                    <iframe frameborder="0" src="https://itch.io/embed/128386?border_width=0&amp;bg_color=0B0C10&amp;link_color=66FCF1" width="206" height="165"></iframe>
+                </div>
+                <div class="game_box">
+                    <iframe frameborder="0" src="https://itch.io/embed/395108?border_width=0&amp;bg_color=0B0C10&amp;link_color=66FCF1" width="206" height="165"></iframe>
+                </div>
+            </div>
         </section>
 
         <section id="ai">
-            
+            <iframe src="https://editor.p5js.org/alexandre-lavoie/embed/jZsZ1dubf"></iframe>
         </section>
+
     </body>
 </html>
