@@ -23,21 +23,26 @@
                 font-weight: normal;
                 margin:0;
                 padding:0;
+                transition: 0.3s;
             }
 
             .overlay{
                 z-index: 999;
                 padding: 1em;
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
                 align-items: center;
                 display: grid;
-                grid-gap: 1em;
+                grid-gap: 0.5em;
                 position: fixed;
                 text-align: center;
-                left: 0;
+                left: 25%;
                 top: 0;
                 height: auto;
-                width: 96%;
+                width: 50%;
+            }
+
+            .overlay h1{
+                font-size: 20px;
             }
 
             .overlay a{
@@ -45,16 +50,10 @@
                 text-decoration: none; 
                 color: inherit;
                 transition: 0.3s;
-                padding: 1em 0;
-                border-radius: 4px;
-                border-color: #66FCF1;
-                border-style: solid;
-                border-width: 3px;
             }
             
             .overlay a:hover{
-                left: 0em;
-                border-color: #45A29E;
+                transform: scale(2.0);
             }
 
             .game_container{
@@ -64,6 +63,33 @@
                 grid-column: 2/3;
                 grid-row: 2/3;
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            .link_container{
+                display: grid;
+                justify-items: center;
+                grid-gap: 1em;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            .link_container a{
+                text-align: center;
+                text-decoration: none; 
+                color: white;
+            }
+
+            .link_container h1:hover{
+                transform: scale(2.0);
+            }
+
+            .game_box iframe{
+                transition: 0.3s;
+            }
+
+            .game_box iframe:hover{
+                transform: scale(1.1);
             }
 
             .ai_container{
@@ -116,12 +142,15 @@
             .home_name h1{
                 transition: 0.3s;
                 font-size: 75px;
+                text-align: right;
+                font-weight: bold;
                 color: #66FCF1;
             }
 
             .home_name h2{
                 transition: 0.3s;
-                font-size: 30px;
+                text-align: right;
+                font-size: 60px;
             }
 
             @media (max-width: 1000px){
@@ -129,6 +158,10 @@
                     display:grid;
                     grid-template-columns: 1fr 10fr 1fr;
                     grid-template-rows: 4fr 10fr 1fr;
+                }
+
+                .home_name h1{
+                    font-size: 60px;
                 }
             }
 
@@ -142,14 +175,14 @@
             <a href="#home"><h1>HOME</h1></a>
             <a href="#game"><h1>GAMES</h1></a>
             <a href="#ai"><h1>AI</h1></a>
-            <a href="#contact"><h1>CONTACT ME</h1></a>
+            <a href="#contact"><h1>CONTACT</h1></a>
             <a href="#cv"><h1>EMPLOYMENT</h1></a>
         </div>
 
         <section id="home">
             <div class="home_name">
-                <h1>ALEXANDRE LAVOIE</h1>
-                <h2>MACHINE LEARNING AND COMPUTER SCIENCE</h2>
+                <h1>ALEXANDRE</h1>
+                <h2>LAVOIE</h2>
             </div>
         </section>
 
@@ -185,12 +218,13 @@
         </section>
 
         <section id="contact">
-            <div class="game_container">
-                <a href="https://twitter.com/alexaigame">TWITTER</a>
-                <a href="https://www.linkedin.com/in/alexandre-lavoie-00/">LINKEDIN</a>
-                <a href="https://www.youtube.com/channel/UCrLs1ZRMuUyURpd43iZsMWA">YOUTUBE</a>
-                <a href="https://github.com/alexandre-lavoie">GITHUB</a>
-                <a href="https://alexandre-lavoie.itch.io/">ITCH.IO</a>
+            <div class="link_container">
+                <a href="https://twitter.com/alexaigame"><h1>TWITTER</h1></a>
+                <a href="https://www.linkedin.com/in/alexandre-lavoie-00/"><h1>LINKEDIN</h1></a>
+                <a href="https://www.youtube.com/channel/UCrLs1ZRMuUyURpd43iZsMWA"><h1>YOUTUBE</h1></a>
+                <a href="https://github.com/alexandre-lavoie"><h1>GITHUB</h1></a>
+                <a href="https://alexandre-lavoie.itch.io/"><h1>ITCH.IO</h1></a>
+                <a href="mailto:alexandre.lavoie00@gmail.com"><h1>EMAIL</h1></a>
             </div>
         </section>
 
