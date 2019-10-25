@@ -1,9 +1,10 @@
 body {
   margin: 0;
   overflow: hidden;
-  font-family: 'Sacramento', cursive;
+  font-family: Cabin;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #1E1E1E;
 }
 
 code {
