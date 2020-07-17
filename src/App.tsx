@@ -2,13 +2,22 @@ import { createMuiTheme, CssBaseline, ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import Routes from './Routes';
-import LandingPage from './pages/LandingPage';
+import LandingPage from './pages/index';
 
 const theme = createMuiTheme({
     palette: {
         background: {
-            default: '#363156'
+            default: '#FFF'
+        },
+        primary: {
+            main: "#FFF"
+        },
+        secondary: {
+            main: "#6075AC"
+        },
+        text: {
+            primary: "#322E18",
+            secondary: "#FFF"
         }
     },
     typography: {
@@ -21,7 +30,7 @@ const App: React.FC = () => {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Router>
-                <Route path="/test">
+                <Route path="/" exact>
                     <LandingPage />
                 </Route>
             </Router>
