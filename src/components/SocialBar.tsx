@@ -39,7 +39,7 @@ const SocialBar: React.FC<SocialBarProps> = (props) => {
     return <Grid item={props.item} container justify={props.justify} alignItems={props.alignItems}>
         {
             LINKS.map(
-                link => <Grid item>
+                (link, index) => <Grid key={index} item>
                     <Tooltip title={link.name}>
                         <IconButton color='primary' onClick={() => window.open(link.link, '_blank')}>
                             <link.icon />

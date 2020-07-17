@@ -32,7 +32,7 @@ const Project: React.FC<{ project: IProject }> = (props) => {
         <Card onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} elevation={6} className={classes.container}>
             <CardActionArea onClick={() => window.open(props.project.link, '_blank')} style={{ display: 'flex' }}>
                 {
-                    (hover && props.project.video) ? <video width='100%' src={props.project.video} autoPlay muted loop /> : <img width='100%' src={props.project.image} />
+                    (hover && props.project.video) ? <video width='100%' src={props.project.video} autoPlay muted loop /> : <img alt='' width='100%' src={props.project.image} />
                 }
             </CardActionArea>
         </Card>

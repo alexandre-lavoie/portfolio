@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
     return (
         <Grid container spacing={2} className={classes.container}>
             {
-                PROJECTS.map(project => <Grid item xs={12} sm={6} md={4}>
+                PROJECTS.map((project, index) => <Grid key={index} item xs={12} sm={6} md={4}>
                     <Project project={project} />
                 </Grid>)
             }
