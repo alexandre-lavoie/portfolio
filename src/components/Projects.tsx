@@ -12,7 +12,7 @@ import { makeStyles, Grid } from '@material-ui/core';
 const PROJECTS: IProject[] = [
     {
         image: DeepPhysics,
-        link: 'https://github.com/alexandre-lavoie/deep-physics'
+        link: 'https://deep-physics.herokuapp.com/'
     },
     {
         image: GoGoDungeonImage,
