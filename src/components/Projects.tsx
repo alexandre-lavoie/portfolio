@@ -45,7 +45,7 @@ const PROJECTS: IProject[] = [
     },
     {
         image: ExploitMe,
-        link: 'https://github.com/alexandre-lavoie/exploit.me'
+        link: 'https://exploitme-9b01d.web.app/'
     },
 ];
 
