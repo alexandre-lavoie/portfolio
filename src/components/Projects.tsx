@@ -37,7 +37,7 @@ const PROJECTS: IProject[] = [
     },
     {
         image: MCGE,
-        link: 'https://github.com/alexandre-lavoie/mcge'
+        link: 'https://material-card-game-engine.herokuapp.com/'
     },
     {
         image: 'https://cdn.dribbble.com/users/5729348/screenshots/13643960/media/a5534dc070349e3a319ad364aed77de3.png',
